@@ -16,7 +16,7 @@ const handleSubmit = (event) => {
   const name = document.getElementById("name")?.value;
   console.log(typeof age);
   if (age === "" || name === "") {
-    alert("Please enter valid details.");
+    alert("Please enter valid details");
   } else {
     checkAgePromise(Number(age),name)
       .then((res) => alert(res))
